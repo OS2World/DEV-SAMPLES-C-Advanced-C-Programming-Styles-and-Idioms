@@ -1,0 +1,70 @@
+Notes on the C++ code for "Advanced C++ Programming Styles and Idioms"
+by James O. Coplien, Addison-Wesley, 1992, ISBN 0-201-54855-0.
+
+............................. The Layout .............................
+
+Most figures are contained in individual files named for their figure
+designation in the book.  Examples outside of figures can be associated
+with the chapter in which they appear by the leading digit in their name.
+Each file is a clear ASCII file (that is, the files are not archived
+in any way).  You can send individual files like this:
+
+    send 2-4.c from c++/idioms
+    send 2-2a.c from c++/idioms
+    send 5-2.c from c++/idioms
+    send fbubble.c from c++/idioms
+
+The complete list of files is:
+
+10-1.c          3-15.c          5-15.c          7-5.c           emptr.h
+10-2.c          3-16.c          5-16.c          8-1.c           erect.c
+11-2.c          3-18.c          5-17.c          8-2.h           erect.h
+2-2a.c          3-19.c          5-18.c          8-3a.c          eshape.c
+2-2b.c          3-2.c           5-19.c          8-3b.c          eshape.h
+2-4.c           3-3.c           5-2.c           8-5.c           eshaprp.c 
+2-5.c           3-4.c           5-20.c          9-10.c          eshaprp.h 
+2-8.c           3-6.h           5-21.c          9-11.c          etop.c
+2angle.h        3-7.c           5-22.c          9-13.c          etringl.c 
+2const.c        3-8.c           5-23.c          9-2.c           etringl.h 
+2funcp.c        3-9.c           5-5.c           9-3.h           ev2tri.c 
+2pi1.c          3ctdstk.c       5-7.c           9-4.h           ev2tri.h 
+2pi2.c          4-1.c           5-8.c           9-5.h           ev3tria.c
+2smf.c          4-2.c           5-9.c           9-6.h           ev3tri.h
+2table.c        4-3.c           5nmarow.c       9-7.h           ev3trib.c
+3-1.c           4-4.c           5nmatom.c       9-8.h           ev3tric.c
+3-10.c          4-5.c           5num.c          appa.c          ev3trim.c
+3-10.h          5-10.c          6-4.c           ecoord.h        fbubble.c
+3-11.h          5-11.c          7-1.c           ek.c            fvideo.c
+3-12.c          5-12.c          7-2.c           ek.h            fvideo2.c
+3-13.c          5-13.c          7-3.c           eload.c 
+3-14.h          5-14.c          7-4.c           emain.c
+
+Many of these files are simply text for figures presenting code fragments,
+and are not intended to be compilable without additional surrounding
+context.  Where it is reasonable to do so, I have provided enough context
+for the code to pass compilation.  Many examples are frameworks which
+may be fleshed out by the reader as exercises.
+
+................... Notes on platform dependencies ...................
+
+Much of the code was written assuming the existence of basic libraries
+to support iostreams (iostream.h), Strings (String.h), and others.
+Most systems provide header files and library code for these abstractions.
+In some cases, minor modifications to the code provided here may be
+necessary for the code to work on a given platform.  Much of the code of
+Chapter 9 and of Appendix E is environment-dependent.
+
+........................... Closing Remarks ..........................
+
+I provide this code with the hope it can be of use as a model for
+building richer, application-specific abstractions in your own
+domain.  Much of the code can be compiled and run for pedagogical
+purposes.  I have compiled and run all of the complete, self-contained
+examples provided.  If you have problems compiling an example you
+think should compile, please let me know and I will try to be of
+assistance.  I will keep this archive up-to-date on research!netlib,
+to reflect fixes as well as incorporation of additional code from
+the book.
+
+					James O. Coplien
+				    	cope@research.att.com
